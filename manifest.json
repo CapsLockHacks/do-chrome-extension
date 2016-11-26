@@ -27,9 +27,19 @@
     "http://github.com/*",
     "https://github.com/*",
     "activeTab",
-    "https://*/*"
+    "https://*/*",
+    "storage"
   ],
   "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js"
+      ]
+    },
     {
       "matches": [
         "https://*/*",
