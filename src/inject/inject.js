@@ -1,5 +1,6 @@
 function insertBadge(){
 	console.log("Insert Badge!");
+	$("#readme").prepend("<div class='depoly-form'><a href=\"#\">deploy to heroku</a></div>");
 }
 
 
