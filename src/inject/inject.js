@@ -1,6 +1,12 @@
+$form = "<form style='display: inline;'>" +
+	"Name: <br><input type='text' name='name' class='form-control' style='display: inline;'><br>" +
+	"Region: <br><input type='text' name='region' class='form-control' style='display: inline;'><br>" +
+	"Size: <br><input type='text' name='size' class='form-control' style='display: inline;'>" +
+	"</form>";
+
 function insertBadge(){
 	console.log("Insert Badge!");
-	$("#readme").prepend("<div class='depoly-form'><a href=\"#\">deploy to heroku</a></div>");
+	$("#readme").prepend("<div class='depoly-form header header-logged-in'><a href=\"#\">deploy to heroku</a><div>"+$form+"</div>");
 }
 
 
