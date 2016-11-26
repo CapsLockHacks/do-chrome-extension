@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "homepage_url": "http://rohanverma.net",
+  "author": "Rohan Verma (rhnvrm) <hello@rohanverma.net>",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -24,12 +25,15 @@
   },
   "permissions": [
     "http://github.com/*",
-    "https://github.com/*"
+    "https://github.com/*",
+    "activeTab",
+    "https://*/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://*/*",
+        "http://*/*"
       ],
       "css": [
         "src/inject/inject.css"
@@ -37,7 +41,8 @@
     },
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://*/*",
+        "http://*/*"
       ],
       "js": [
         "src/inject/inject.js"
